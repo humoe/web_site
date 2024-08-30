@@ -28,7 +28,6 @@ app-carousel {
   @media (min-width: $large-desktop-window) {
     margin-right: $size-xmedium;
   }
-
 }
 
 .presentation__text {
@@ -93,10 +92,19 @@ app-carousel {
       }
     }
   }
-
 }
 
 .entreprise__band {
   width: 100%;
 }
 
+.content__img-band {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+
+  @media (min-width: $small-desktop-window) {
+    flex-direction: row;
+  }
+}

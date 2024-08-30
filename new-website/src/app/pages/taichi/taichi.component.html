@@ -50,6 +50,30 @@
         l'université de Rimouski au Québec.
       </p>
     </app-chapter>
+    <app-chapter
+      (click)="goToChapter3()"
+      color="primary"
+      img="assets/images/taichi/carte-france-enseignants-certifiés-300x272.jpg"
+      title=" Tai Chi Qi Gong Meditation : Les liens"
+    >
+      <p class="chapter__teaser">
+        Vous retrouverez ici les liens vers le site du réseau Corps Vivant Corps
+        Conscient et ses enseignants.
+      </p>
+    </app-chapter>
+    <app-chapter
+      (click)="goToChapter3()"
+      color="primary"
+      img="assets/images/taichi/formation perso 300x213.jpg"
+      title="Tai Chi  Qi Gong  Méditation : La formation personnelle "
+    >
+      <p class="chapter__teaser">
+        La formation personnelle est ouverte à tous ceux qui ont déjà pris des
+        cours ou suivi un stage et qui ont envie d'approfondir. Elle comporte
+        toutes les techniques de base en Tai Chi et en Chi, selon l’orientation
+        Corps Vivant Corps Conscient®. Elle représente 24 jours sur 18 mois.
+      </p>
+    </app-chapter>
   </div>
   <app-img-band
     [cadre]="true"
@@ -98,12 +122,12 @@
     </p>
     <div class="chapter__row justify-content-around">
       <img
-        alt="Marie-Laure Humeau, professeur de Tai Chi, Le Mans"
+        alt="Marie-Laure Humeau, professeur de Tai Chi, Le Mans et Laigné en Belin"
         class="chapter__image"
         src="assets/images/taichi/chi-préaux-400x266.jpg"
       />
       <img
-        alt="Marie-Laure Humeau, professeur de Tai Chi, Le Mans"
+        alt="Marie-Laure Humeau, professeur de Tai Chi, Le Mans et Laigné en Belin"
         class="chapter__image"
         src="assets/images/taichi/tai-chi-127-400x300.jpg"
       />
@@ -140,13 +164,13 @@
         </p>
         <h3 class="chapter__content--title">Ma Pratique</h3>
         <p>
-          Je pratique le Qi Gong et le Tai Chi "Corps Vivant Corps Conscient" et
+          Je pratique le Qi Gong et le Tai Chi Corps Vivant Corps Conscient® et
           je transmets avec plaisir cet art millénaire, sans recherche de
           performance et attentive au confort de chacun.<br />
-          La pédagogie "Corps Vivant Corps conscient" est progressive et
-          précise, adaptée à notre monde occidental. Elle met l'accent sur le
-          ressenti et développe une meilleure qualité de vie, vers un corps
-          vivant et conscient.
+          La pédagogie Corps Vivant Corps conscient® est progressive et précise,
+          adaptée à notre monde occidental. Elle met l'accent sur le ressenti et
+          développe une meilleure qualité de vie, vers un corps vivant et
+          conscient.
         </p>
         <p>
           Un corps vivant, c’est à dire disponible, souple, puissant, en
@@ -164,7 +188,7 @@
     </div>
     <div class="chapter__row justify-content-around">
       <img
-        alt="Marie-Laure Humeau, professeur de Tai Chi, Le Mans"
+        alt="Marie-Laure Humeau, professeur de Tai Chi, Le Mans et Laigné en Belin"
         class="chapter__image"
         src="assets/images/taichi/préaux-simple-fouet-400x277.png"
       />
@@ -375,5 +399,171 @@
     >
       {{ testimony.testimony }}
     </app-testimony>
+  </div>
+
+  <!--Liens-->
+  <app-img-band
+    [cadre]="true"
+    class="taichi__band"
+    id="liens"
+    title="Liens"
+    type="meditation"
+  ></app-img-band>
+  <div class="taichi__chapter">
+    <h3 class="chapter__content--title">
+      L'école Corps Vivant Corps Conscient®
+    </h3>
+    <p class="chapter__content">
+      L’école est ouverte à toutes et tous, et propose des stages et formations
+      uniques en leur genre. Depuis 40 ans les enseignants pratiquent et
+      enseignent le Tai Chi, le Chi & la méditation. Nicole, Martine, Simone &
+      Jan continuent à être une source de ce que je transmets aujourd'hui.
+      <br />
+      En savoir plus sur
+      <a
+        href="https://www.corpsvivantconscient.com/"
+        target="_blank"
+        title="corps vivant corps Conscient®"
+        >Corps Vivant Corps Conscient®</a
+      >
+    </p>
+
+    <div class="taichi__chapter">
+      <h3 class="chapter__content--title">Les enseignants en France</h3>
+      <p class="chapter__content">
+        Vous pouvez retrouvez cette philosophie de transmission du Tai Chi, du
+        Qi Gong et de la méditation aux quartre coins de France.
+      </p>
+      <ul>
+        <li>
+          <a
+            href="https://taichipourtous-rennes.fr/"
+            target="_blank"
+            title="eric"
+            >Eric Dupas sur Rennes</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://viarmonie.jimdofree.com/liens/"
+            target="_blank"
+            title="Marie Jeanne"
+          >
+            Marie Jeanne Morin sur Dinard
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.facebook.com/lotusbleutaichi85"
+            target="_blank"
+            title="fanfy"
+            >Françoise Babarit sur Les Herbiers</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.quatrepiliers.fr/"
+            target="_blank"
+            title="eric, jenny, martine, baptiste"
+            >Les 4 piliers sur Paris
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.tai-chi-qi-gong-touraine.fr/"
+            target="_blank"
+            title="beatrice"
+            >Béatrice Lessault dans le Val de Loire
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.taichimorvan.com/"
+            target="_blank"
+            title="Jocelyne"
+            >Jocelyne Nomblot dans le Morvan</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.chigong-taichi-marseille.fr/"
+            target="_blank"
+            title="yoko"
+            >Yoko Aikawa Verley sur Marseille</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.atelier-mouvement.com/"
+            target="_blank"
+            title="jean emmanuel"
+            >Jean Emmanuel Henneau sur Labenne Océan
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://stretching-postural.ch/tai-chi/"
+            target="_blank"
+            title="marc"
+            >Marc Brunaud en Suisse
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!--Formation Personnelle-->
+  <app-img-band
+    [cadre]="true"
+    class="taichi__band"
+    id="formation"
+    title="Formation personnelle"
+    type="meditation"
+  ></app-img-band>
+  <div class="taichi__chapter">
+    <h3 class="chapter__content-title">La formation personnelle</h3>
+    <p class="chapter__content">
+      La formation personnelle est ouverte à tous ceux qui ont suivi les cours
+      ou un stage. Elle est ouverte à tous ceux qui ont envie de cheminer à
+      travers le Tai Chi et le Chi; acquérir des outils pour vivre son corps
+      différemment, transformer sa conscience intérieure, se centrer, progresser
+      en Tai Chi et en Chi etc.
+      <br />Elle comporte les techniques de base en Tai Chi en Chi.
+    </p>
+    <p class="chapter__content">Elle dure 24 jours échelonnés sur 18 mois.</p>
+    <ul>
+      <li>
+        3 stages en résidentiel de 5/6 jours à St Léger sous Beuvray, dans le
+        Morvan
+      </li>
+      <li>
+        4 week-ends avec les enseignants certifiés : Marseilles ou Nantes ou
+        Paris ou Martigny (Suisse) ou Bruxelles
+      </li>
+    </ul>
+    <p class="chapter__content">
+      Elle est dirigée par Nicole Bernard, Martine Bodilis et Simone Petrequin
+      assistées des enseignants certifiés en région.
+    </p>
+    <p class="chapter__content">En savoir plus sur la formation et l'école</p>
+    <ul>
+      <li>
+        <a
+          href="https://www.corpsvivantconscient.com/corps-vivant-corps-conscient/"
+          target="_blank"
+          title="corps vivant corps Conscient®"
+          >Corps Vivant Corps Conscient® & Formation personnelle
+        </a>
+      </li>
+      <br />
+      <p classe="chapter__content">Pour télécharger le formulaire</p>
+      <li>
+        <a
+          href="https://www.corpsvivantconscient.com/formulaires-dinscription-aux-cours-et-stages-2/"
+          target="_blank"
+          title="formulaire formation personnelle®"
+          >Formulaire Formation personnelle</a
+        >
+      </li>
+    </ul>
   </div>
 </div>

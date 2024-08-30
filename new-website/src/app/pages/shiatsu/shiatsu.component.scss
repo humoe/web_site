@@ -115,6 +115,7 @@ app-carousel {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  gap: 1rem;
 
   @media (min-width: $small-desktop-window) {
     flex-direction: row;

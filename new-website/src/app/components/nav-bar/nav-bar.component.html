@@ -45,6 +45,18 @@
           routerLink="/{{ taichiPage }}"
           >Documents</a
         >
+        <a
+          [queryParams]="{ anchor: 'liens' }"
+          class="none"
+          routerLink="/{{ taichiPage }}"
+          >Liens</a
+        >
+        <a
+          [queryParams]="{ anchor: 'formation' }"
+          class="none"
+          routerLink="/{{ taichiPage }}"
+          >Formation personnelle</a
+        >
         <!--        <a [queryParams]="{anchor: 'stage'}" class="none" routerLink="/{{taichiPage}}">Stages et ateliers</a>-->
       </div>
     </h3>
