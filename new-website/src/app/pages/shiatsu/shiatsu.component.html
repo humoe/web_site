@@ -1,67 +1,238 @@
 <app-nav-bar [page]="page"></app-nav-bar>
 <div class="shiatsu-page">
   <app-carrousel [multiple]="false" type="shiatsu"></app-carrousel>
-  <h2 class="sr-only">présentation</h2>
-  <div class="shiatsu__content">
-    <p class="content__text--tertiary">
-      Marie Laure, accompagne la conscience du corps par le Tai Chi, le Qi Gong,
-      la méditation, les massages-bien-être et le shiatsu.
-    </p>
-    <p class="content__text">
-      Je souhaite aujourd’hui, renforcer la dimension prévention et
-      accompagnement à la santé avec le shiatsu. Depuis septembre 2018 j’ai
-      commencé une formation pour devenir spécialiste en shiatsu à l’issue des 3
-      années. J'entame aujourd'hui ma troisième année de formation, dans ce
-      cadre j’accueille des volontaires. Je peux aussi me déplacer en entreprise
-      dans le cadre d’un stage.
-    </p>
-    <p class="content__text">
-      Le shiatsu (littéralement pression digitale) est une pratique manuelle
-      d’origine japonaise qui mobilise le corps dans sa globalité. Elle puise
-      ses sources dans les bases de l’énergétique traditionnelle chinoise.
-    </p>
-
-    <div class="content__row">
-      <img
-        alt="Shiatsu présentation."
-        class="img-certification-taichi"
-        src="assets/images/shiatsu/IMG_4729.png"
-      />
-      <p class="content__row__text">
-        Le shiatsu alterne des pressions, des étirements et empaumements sur
-        tout le corps, dans un but de rééquilibrage corporel et d’amélioration
-        ou de maintien de la santé. Il associe ces étirements, pressions sur les
-        trajets des méridiens, des muscles et des articulations. Il est un
-        formidable processus d’accompagnement à la santé: comme prévention,
-        entretien ou amélioration de la santé. Il est plus globalement un
-        formidable processus de cheminement et de bien-être, de mieux être. Il
-        libère les tensions pour retrouver une meilleure circulation de
-        l’énergie vitale, le Chi.
-        <br/>
-        Le shiatsu est un processus holistique d’accompagnement et de prise en
-        charge des troubles physiques et psycho-émotionnels. Il est une source
-        de prévention à la santé avec une recherche d'équilibre et d'homéostasie
-        dans le corps. A travers cette recherche d'équillibre il est adapté à
-        l'état de la personne à chaque séance.
+  <div class="shiatsu-chapters">
+    <h2 class="sr-only">Chapitres</h2>
+    <app-chapter
+      (click)="goToChapter1()"
+      color="tertiary"
+      img="assets/images/shiatsu/shiatsu-bilan-300x200.jpg "
+      title="Shiatsu : Les bienfaits"
+    >
+      <p class="chapter__teaser">
+        Le shiatsu se répand de plus en plus en France car il répond à de
+        multiples demandes comme la diminution des effets du stress, des
+        tensions nerveuses, de l’état de fatigue, des douleurs.
       </p>
-    </div>
-    <p class="content__text">
-      Le shiatsu se reçoit habillé dans des vêtements confortables (au besoin
-      prévoyez des chaussettes), le plus souvent au sol sur futon mais aussi sur
-      table selon le contexte. Au fil de mon accompagnement je m'adapte aux
-      besoins et aux attentes du volontaire.
+    </app-chapter>
+    <app-chapter
+      (click)="goToChapter2()"
+      color="tertiary"
+      img="assets/images/shiatsu/shiatsu-dos-300x200.jpg"
+      title="Shiatsu : Origines & Présentation"
+    >
+      <p class="chapter__teaser">
+        Le shiatsu (littéralement pression digitale) est une pratique manuelle
+        d’origine japonaise qui mobilise le corps dans sa globalité. Elle puise
+        ses sources dans les bases de l’énergétique traditionnelle chinoise. Il
+        existe plusieurs grandes orientations dont celle de Shizuto Masunaga.
+      </p>
+    </app-chapter>
+    <app-chapter
+      (click)="goToChapter3()"
+      color="tertiary"
+      img="assets/images/shiatsu/mains-300x212.jpg"
+      title="Shiatsu : Le déroulement d'une séance"
+    >
+      <p class="chapter__teaser">
+        Le shiatsu se reçoit habillé dans des vêtements confortables, le plus
+        souvent au sol sur un futon mais aussi sur une table de massage, selon
+        le contexte.
+      </p>
+    </app-chapter>
+  </div>
+  <app-img-band
+    [cadre]="true"
+    class="shiatsu__band"
+    id="bienfaits"
+    title="Shiatsu : Les bienfaits"
+    type="meditation"
+  >
+  </app-img-band>
+  <div class="chapter">
+    <p class="chapter__introduction">
+      Le shiatsu est une pratique d'accompagnement global qui prend racine dans
+      l'énergétique traditionnelle chinoise.
     </p>
-    <p class="content__text">
-      Le shiatsu est reconnu officiellement par l’état français et le Ministre
-      du Travail (JO du 25/07/2015) comme profession, et seul le SPS (Syndicat
-      Professionnel de Shiatsu) est actuellement habilité à délivrer un titre
-      professionnel de « Spécialiste en Shiatsu » reconnu par l’état.
+    <h3 class="chapter__title">Bienfaits, d'une façon globale</h3>
+    <p class="chapter__content">
+      Le shiatsu se répand de plus en plus en France car il répond à de
+      multiples demandes comme la diminution des effets du stress, des tensions
+      nerveuses, de l’état de fatigue. <br />Le shiatsu est particulièrement
+      efficace dans de nombreuses affections allant du fameux "mal au dos" aux
+      problèmes digestifs et intestinaux en passant par les allergies et les
+      maux de tête. Tout en répondant à des demandes précises, il garde une vue
+      globale d'accoupagnement. Il est de plus en plus pris en charge par les
+      mutuelles.
+      <br />
+      Le shiatsu est un processus holistique d’accompagnement et de prise en
+      charge des troubles physiques et psycho-émotionnels. Il est un
+      accompagnement à la santé (comme prévention, entretien ou amélioration).
+      Il peut s'insrire dans une démarche ponctuelle ou un accompagnement dans
+      la durée. <br />La carte d'abonnement s'incrit dans cette démarche. Contre
+      10€, elle permet d'avoir entre 6 et 12 séances sur une année lissée au
+      tarif de 55€. Elle est accessible après le premier rendez-vous. Le tarif
+      du premier rendez-vous ou des rendez-vous ponctuels est de 65€. Il dure
+      entre 1H15/1H30.
+      <br />
     </p>
-
+    <h3 class="chapter__title">Bienfaits, quelques exemples</h3>
+    <p class="chapter__content">
+      Porté par sa vision orientale il complémente notre médecine occidentale en
+      apportant d’autres clés à l’entretien et l’amélioration de la santé. Le
+      shiatsu et la relation qu’établissent le receveur et le donneur agissent
+      ensemble.
+      <br />
+      Au fil des séances une évolution s’installe vers plus d’équilibre et de
+      bien-être. Nous pouvons donner à titre d’exemple, sans que cette liste
+      soit exhaustive, quelques effets portés par cet accompagnement :
+      <br /><strong>Assouplissement des muscles</strong><br /><strong
+        >Renforcement du système immunitaire</strong
+      >
+      <br /><strong>Stimulation du système digestif</strong> <BR /><strong
+        >Equilibre du système endocrinien, du cycle féminin etc</strong
+      >.
+      <br />
+      Le shiatsu est particulièrement intéressant car il permet d'activer notre
+      processus d'auto-guérison, un peu comme le Tai Chi, et de nous mettre en
+      mouvement quelque soit l'endroit dont l'on parte. Où du moins comme au Tai
+      Chi, il reste le fil conducteur de mon orientation et de mon
+      accompagnement.<br />
+      Il est particulièrement intéressant pour tous les
+      <strong
+        >troubles du cycle féminin : endométriose, syndrome des ovaires
+        polykistiques (SOPK), endométriose etc</strong
+      >.
+    </p>
+    <h3 class="chapter__title">Public</h3>
+    <p class="chapter__content">
+      Le shiatsu est ouvert à tous, quel que soit l’âge ou la condition
+      physique. Chacun vient avec ses propres motivations. Chacun est accueilli
+      avec autant de bienveillance, qu’il vienne pour améliorer sa qualité de
+      vie, pour se déstresser ou de façon ponctuelle.
+    </p>
     <div class="content__img-band">
-      <img alt="Shiatsu de la main." src="assets/images/shiatsu/IMG_4727.png"/>
-      <img alt="Shiatsu du pied." src="assets/images/shiatsu/IMG_4714.png"/>
-      <img alt="Shiatsu du dos." src="assets/images/shiatsu/IMG_4734.png"/>
+      <img
+        alt="Marie-Laure Humeau, spécialiste en shiatsu, Le Mans Laigné en Belin"
+        src="assets/images/shiatsu/public-flout-300x163.jpg"
+        class="chapter__image"
+      />
+      <img
+        alt="Marie-Laure Humeau, spécialiste en shiatsu, Le Mans Laigné en Belin"
+        src="assets/images/shiatsu/carte-abonnement-300x142.jpg"
+        class="chapter__image"
+      />
+    </div>
+  </div>
+  <app-img-band
+    [cadre]="true"
+    class="shiatsu__band"
+    id="origine"
+    title="Shiatsu : Origine & Présentation"
+    type="meditation"
+  >
+  </app-img-band>
+  <div class="chapter">
+    <p class="chapter__introduction">
+      Le shiatsu (littéralement pression des doigts) est une pratique manuelle
+      d’origine japonaise qui mobilise le corps dans sa globalité.
+    </p>
+    <h3 class="chapter__title">Origines</h3>
+    <p class="chapter__content">
+      Le shiatsu puise ses sources dans les bases de l’énergétique
+      traditionnelle chinoise.
+      <br />
+      Les premières grandes orientations ont été créées par Tokujiro Namikoshi
+      et Shizuto Masunaga, depuis de nombreux courants sont venus les compléter.
+      <br />
+      Selon Shizuto Masunaga ces étirements, pressions sur les trajets des
+      méridiens, des muscles, se font au rythme de la respiration du receveur.
+      Cette orientation est le coeur de ma formation initiale.
+      <br />
+    </p>
+    <h3 class="chapter__title">Présentation</h3>
+    <p>
+      Le shiatsu est un formidable processus d’accompagnement à la santé: comme
+      prévention, entretien ou amélioration. Il est aussi un formidable
+      processus de cheminement et de bien-être, de mieux être. Il libère les
+      tensions pour retrouver une meilleure circulation de l’énergie vitale, le
+      Chi.
+      <br />
+      Le shiatsu alterne des pressions, des étirements et empaumements sur tout
+      le corps, dans un but de rééquilibrage corporel et d’amélioration ou de
+      maintien de la santé.
+      <br />
+      Le shiatsu vient stimuler le pouvoir d'auto-guérison.
+    </p>
+    <h3 class="chapter__title">Le titre de spécialiste en shiatsu</h3>
+    <p>
+      Le titre de Spécialiste en shiatsu est reconnu par l’état (JO du
+      25/07/2015). J'ai validé ma formation initiale, de 3 ans 1/2 au printemps
+      2022.
+    </p>
+    <div class="content__img-band">
+      <img
+        alt="Marie-Laure Humeau, spécialiste en shiatsu, Le Mans Laigné en Belin"
+        class="chapter__image"
+        src="assets/images/shiatsu/titre-specialiste-200x296.jpg"
+      />
+    </div>
+  </div>
+  <app-img-band
+    [cadre]="true"
+    class="shiatsu__band"
+    id="deroulement"
+    title="Shiatsu : Le déroulement d'une séance"
+    type="meditation"
+  >
+  </app-img-band>
+  <div class="chapter">
+    <p class="chapter__introduction">
+      Le shiatsu se reçoit habillé dans des vêtements confortables, le plus
+      souvent au sol sur un futon mais aussi sur une table de massage, selon le
+      contexte.
+    </p>
+    <h3 class="chapter__title">L'accueil</h3>
+    <p class="chapter__content">
+      Le temps d’accueil est le moment de faire le point des antécédents, des
+      activités, des attentes etc. et faire connaissance. Il est souvent plus
+      long à la première séance.
+    </p>
+    <h3 class="chapter__title">La séance</h3>
+    <p>
+      Le receveur est le plus souvent allongé, dans une tenue confortable.
+      <br />
+      Un bilan énergétique vient compléter les informations recueillies et
+      oriente la séance.
+      <br />
+      Les étirements, empaumements, pressions sont alors adaptés au besoin du
+      moment.
+      <br />
+      Tout au long de la séance, les pressions font appel aux pouvoirs
+      d'auto-guérison du receveur pour stimuler son équilibre.
+      <br />
+      En fin de séance des conseils peuvent venir compléter la séance et
+      prolonger ses effets. ils peuvent être orientés vers la respiration, la
+      posture, des makko-ho etc.)
+    </p>
+    <h3 class="chapter__title">Au fil des séances</h3>
+    <p>
+      Au fil des séances le corps dans sa globalité retrouve plus de souplesse
+      et d’équilibre sur le plan physique, psycho-émotionnel et énergétique.
+    </p>
+    <div class="content__img-band">
+      <img
+        alt="shiatsu bilan"
+        src="assets/images/shiatsu/shiatsu-zoom-bilan-200x300.jpg"
+      />
+      <img
+        alt="shiatsu latéral"
+        src="assets/images/shiatsu/shiatsu-lateral-200x300.jpg"
+      />
+      <img
+        alt="shiatsu visage"
+        src="assets/images/shiatsu/shiatsu-visage-200x300.jpg"
+      />
     </div>
   </div>
 </div>

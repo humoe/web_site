@@ -1,6 +1,5 @@
 @import "src/assets/styles/bases";
 
-
 app-carousel {
   width: 100%;
 }
@@ -11,13 +10,82 @@ app-carousel {
   align-items: center;
 }
 
-.shiatsu__content {
+.shiatsu-chapters {
   width: 80%;
+  margin: $size-xmedium 0;
+  .chapter__row {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    @media (min-width: $small-desktop-window) {
+      flex-direction: row;
+    }
+  }
+
+  @media (min-width: $small-desktop-window) {
+    width: 75%;
+    margin-bottom: 4.5 * $size-default;
+  }
+
+  @media (min-width: $large-desktop-window) {
+    width: 65%;
+    margin-bottom: 6.5 * $size-default;
+  }
+}
+
+.shiatsu__band {
+  width: 100%;
+}
+
+.chapter {
+  width: 90%;
   margin: $size-large 0;
+
+  @media (min-width: $small-desktop-window) {
+    width: 80%;
+  }
 
   @media (min-width: $large-desktop-window) {
     width: 65%;
   }
+}
+
+.chapter__row {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+
+  @media (min-width: $small-desktop-window) {
+    flex-direction: row;
+  }
+}
+
+.chapter__introduction {
+  color: $color-project-tertiary-dark;
+  font-weight: $txt-regular-medium;
+  font-size: $txt-size-regular;
+  margin-bottom: $size-xmedium;
+}
+
+.chapter__content {
+  color: $color-empty;
+  font-size: 1.125rem;
+  text-align: justify;
+  margin-bottom: $size-xmedium;
+}
+
+.chapter__image {
+  height: 6 * $size-large;
+  width: fit-content;
+}
+
+.chapter__title {
+  color: $color-project-primary-dark;
+  text-transform: uppercase;
+  font-size: $txt-size-regular;
+  font-weight: $txt-bold-default;
+  margin-bottom: $size-default;
 }
 
 .content__row {
@@ -47,6 +115,7 @@ app-carousel {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  gap: 1rem;
 
   @media (min-width: $small-desktop-window) {
     flex-direction: row;
