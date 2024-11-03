@@ -1,0 +1,35 @@
+
+.btn-liberlo {
+  text-decoration: none;
+  word-break: break-word;
+  max-width: fit-content;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Work Sans", arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  line-height: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 9px 54px;
+  background-color: #6d58d6;
+  border-radius: 5px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.btn-liberlo img {
+  margin-right: 10px;
+}
+.btn-liberlo .text {
+  color: white !important;
+}
+.btn-liberlo:hover {
+  background-color: #4e3f99;
+}
