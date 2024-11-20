@@ -4,7 +4,7 @@ import { ActivatedRoute } from '@angular/router';
 import { ImageItem } from '../../model/massage.model';
 import { MassageEnum } from '../../model/massage.enum';
 import { HasTitle } from '../../model/has-title.model';
-import { takeUntil } from 'rxjs/operators';
+import {filter, takeUntil} from 'rxjs/operators';
 import { Subject } from 'rxjs';
 
 
@@ -62,7 +62,9 @@ export class MassageComponent implements AfterViewChecked, OnDestroy, HasTitle {
   ];
 
   title = ' Massages bien-être au Mans (72) | Humoe';
+
   private _destroyed$ = new Subject();
+  private anchor: string;
 
   constructor(private readonly route: ActivatedRoute) {
   }
@@ -110,7 +112,7 @@ export class MassageComponent implements AfterViewChecked, OnDestroy, HasTitle {
   private scrollToAnchor(anchor: string): void {
     try {
       if (anchor) {
-        document.querySelector(`#${ anchor }`).scrollIntoView();
+        document.getElementById(anchor).scrollIntoView();
       }
     } catch (e) {
       console.error('Scoll impossible', e);
